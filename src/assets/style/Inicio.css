@@ -1,0 +1,190 @@
+.Portada-Inicio{
+    height: 640px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.Portada-Inicio img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.capaPortada{
+    height: 640px;
+    width: 100%;
+    background-color: rgba(8, 8, 8, 0.521);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.containerTitulo-Portada{
+    height: 400px;
+    width: 800px;
+    margin-top: 80px;
+    color: white;
+    font-weight: bold;
+}
+
+.containerBtn-Inicio{
+    height: 100px;
+    width: 800px;
+}
+
+.containerBtn-Inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px ;
+}
+
+.containerBtn-Inicio button{
+    width: 150px;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.containerBtn-Inicio button:hover{
+    background-color: yellow;
+    color: black;
+}
+
+
+/* *************
+Sucursales******************************* */
+.sucursales{
+    height: 700px;
+    width: 100%;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.containerTitulo-sucursales{
+    width:600px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cardSucursales{
+    height: 440px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.fecha-card{
+    padding: 10px 30px;
+    background-color: burlywood;
+    border-radius: 10px;
+}
+
+.card-body div{
+    height: 80px;
+    width: 100%;
+}
+
+.item-body div{
+  width: 300px;
+}
+
+.horario-card{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:767px) {
+
+    .capaPortada{
+        background-color: rgba(8, 8, 8, 0.753);
+    }
+
+    .containerTitulo-Portada{
+        height: 400px;
+        width: 300px;
+    }
+
+    .containerBtn-Inicio{
+        height: 100px;
+        width: 300px;
+        
+    }
+
+    .sucursales{
+        height: 1200px;
+        width: 100%;
+        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .containerTitulo-sucursales{
+        width:320px;
+        height: 200px;
+    }
+
+    .fecha-card{
+        padding: 10px 10px;
+        background-color: burlywood;
+        border-radius: 10px;
+    }
+
+    .item-body div{
+        width: 200px;
+        font-size: 15px;
+      }
+
+      .horario-card{
+        font-size: 13px;
+        font-weight: bold;
+    }
+}
