@@ -110,13 +110,82 @@ Sucursales******************************* */
 }
 
 
+/* **********galeria************************* */
+
+.SliderGaleria{
+    width: 100%;
+    height: auto;
+    margin:auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+
+}
+
+.containerItems{
+    animation: scroll 60s linear infinite;
+    gap: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.imgSlide{
+  height: 500px;
+  width: 500px;
+  margin: 0px 20px;
+  padding-top: 50px;
+}
+
+.SliderGaleria2{
+    width: 100%;
+    margin:auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.containerItems2{
+    animation: scrollSlider 60s linear infinite;
+    gap: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.imgSlide{
+  height: 450px;
+  width: 500px;
+  margin: 0px 20px;
+  transition: 0.5s ease-in-out;
+ 
+}
+
+.imgSlide:hover{
+   scale: 1.1;
+}
 
 
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(-100%);
+    }
+}
 
 
+@keyframes scrollSlider {
+    from{
+        transform: translateX(-100%);
+    }
 
-
-
+    to{
+        transform: translateX(0);
+    }
+}
 
 
 
@@ -156,6 +225,8 @@ Sucursales******************************* */
         
     }
 
+    /* ********sucursales******* */
+
     .sucursales{
         height: 1200px;
         width: 100%;
@@ -187,4 +258,14 @@ Sucursales******************************* */
         font-size: 13px;
         font-weight: bold;
     }
+
+    /* ********slider*********** */
+
+    .imgSlide{
+        height: 350px;
+        width: 350px;
+        margin: 0px 20px;
+        transition: 0.5s ease-in-out;
+       
+      }
 }
