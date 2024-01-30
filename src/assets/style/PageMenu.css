@@ -1,0 +1,85 @@
+.PortadaMenu{
+    height: 450px;
+    width: 100%;
+    background-color: red;
+    position: relative;
+}
+
+
+.PortadaMenu img{
+   height: 100%;
+   width: 100%;
+}
+
+.capaPortada-menu{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.534);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.menuBusqueda{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuBusqueda div{
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btnBusqueda{
+   height: 40px;
+   width: 140px;
+   background-color: yellow;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   color: black;
+   transition: 0.5s ease;
+}
+
+
+.btnBusqueda:hover{
+   background-color: black;
+   border: 1px solid white;
+   border: 1px solid yellow;
+   border-radius: 6px;
+   color: white;
+}
+
+
+
+@media screen and (max-width:767px) {
+    .menuBusqueda{
+        height: 150px;
+        width: 100%;
+    }
+    
+    .menuBusqueda div{
+        width: 600px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .btnBusqueda{
+       height: 40px;
+       width: 100px;
+       font-size: 13px;
+    }
+}
