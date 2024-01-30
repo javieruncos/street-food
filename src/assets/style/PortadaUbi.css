@@ -1,0 +1,51 @@
+.PortadaUbicacion {
+    height: 500px;
+    width: 100%;
+    background-color: red;
+    position: relative;
+}
+
+.PortadaUbicacion img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa{
+    height: 500px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.568);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.capa div{
+    width: 660px;
+    text-align: center;
+}
+
+.btn-Ubi{
+    padding: 10px 40px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: yellow;
+    transition: 0.5s ease;
+}
+
+.btn-Ubi:hover{
+    background-color: #191919;
+    color: yellow;
+    border: 1px solid yellow;
+}
+
+@media screen and (max-width:767px) {
+    .capa div{
+        width: 300px;
+        text-align: center;
+    }
+}

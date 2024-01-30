@@ -1,0 +1,28 @@
+.cardMenu{
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 8px 9px 12px -2px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 8px 9px 12px -2px rgba(0,0,0,0.25);
+    -moz-box-shadow: 8px 9px 12px -2px rgba(0,0,0,0.25);
+}
+
+.headerCard{
+    height: 250px;
+    width: 100%;
+    background-color: red;
+}
+
+.headerCard img{
+    height: 250px;
+    width: 100%;
+}
+
+.bodyCard div{
+    height: 100px;
+    width: 100%; 
+    white-space: wrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
