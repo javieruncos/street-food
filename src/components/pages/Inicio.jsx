@@ -2,7 +2,7 @@ import React from 'react';
 import "../../assets/style/Inicio.css";
 import CardSucursales from '../UiComponents/CardSucursales';
 import { infoSucursales, infoSucursales2 } from '../../helpers/info';
-import SliderGalery from '../UiComponents/SliderGalery';
+import SliderGalery from '../UiComponents/sliderGalery';
 import CardMenu from '../UiComponents/CardMenu';
 import PortadaUbicacion from '../UiComponents/PortadaUbicacion';
 

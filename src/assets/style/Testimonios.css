@@ -14,7 +14,7 @@
 .capaPortada-testimonios{
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.623);
+    background-color: rgba(0, 0, 0, 0.411);
     position: absolute;
     top: 0;
     display: flex;
@@ -26,10 +26,13 @@
 
 
 .cardTestimonios{
-    height: 200px;
+    height: 230px;
     width: 100%;
-    background-color: red;
     border-radius: 10px;
+    box-shadow: 8px 9px 12px -2px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 8px 9px 12px -2px rgba(0,0,0,0.25);
+    -moz-box-shadow: 8px 9px 12px -2px rgba(0,0,0,0.25);
+    border: 1px solid rgba(128, 128, 128, 0.226);
 }
 
 .header-card{
@@ -48,5 +51,14 @@
 
 .profileImg img{
     height: 100%;
-    width: 100%;
+    width: 100%;object-fit: cover;
+}
+
+
+@media screen and (max-width:767px) {
+
+    .galeria{
+        display: none;
+    }
+    
 }

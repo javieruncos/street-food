@@ -161,11 +161,6 @@ Sucursales******************************* */
  
 }
 
-.imgSlide:hover{
-   scale: 1.1;
-}
-
-
 @keyframes scroll {
     from{
         transform: translateX(0);
@@ -186,25 +181,6 @@ Sucursales******************************* */
         transform: translateX(0);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -262,8 +238,9 @@ Sucursales******************************* */
 
     /* ********slider*********** */
 
-    .galeria div{
-        text-align: center
+    .galeria {
+        text-align: center;
+        display: none;
     }
 
     .imgSlide{
