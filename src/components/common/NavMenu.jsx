@@ -11,7 +11,7 @@ const NavMenu = () => {
             <Nav className="me-auto">
               <Nav.Link href="/">Inicio</Nav.Link>
               <Nav.Link href="/pageMenu">Menu</Nav.Link>
-              <Nav.Link href="#link">Testimonios</Nav.Link>
+              <Nav.Link href="/testimonios">Testimonios</Nav.Link>
               <Nav.Link href="#link">Administrador</Nav.Link>
               <Nav.Link href="#link">Equipo</Nav.Link>
               <Nav.Link href="#link">Ubicacion</Nav.Link>

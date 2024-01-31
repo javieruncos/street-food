@@ -1,0 +1,52 @@
+.portada-testimonios{
+    height: 450px;
+    width: 100%;
+    background-color: aqua;
+    position: relative;
+}
+
+.portada-testimonios img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.capaPortada-testimonios{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.623);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: yellow ;
+}
+
+
+.cardTestimonios{
+    height: 200px;
+    width: 100%;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.header-card{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profileImg{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  
+}
+
+.profileImg img{
+    height: 100%;
+    width: 100%;
+}
