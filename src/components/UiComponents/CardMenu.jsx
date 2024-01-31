@@ -3,7 +3,7 @@ import "../../assets/style/CardMenu.css"
 
 const CardMenu = () => {
     return (
-        <div className="col-12 col-md-4">
+        <div className="col-12 col-md-6 col-lg-4">
             <div className='cardMenu my-4'>
                 <div className='headerCard'>
                     <img src="https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />

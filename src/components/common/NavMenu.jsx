@@ -13,7 +13,7 @@ const NavMenu = () => {
               <Nav.Link href="/pageMenu">Menu</Nav.Link>
               <Nav.Link href="/testimonios">Testimonios</Nav.Link>
               <Nav.Link href="#link">Administrador</Nav.Link>
-              <Nav.Link href="#link">Equipo</Nav.Link>
+              <Nav.Link href="/equipoChef">Equipo</Nav.Link>
               <Nav.Link href="/pageUbicacion">Ubicacion</Nav.Link>
             </Nav>
             <div className='py-2  d-flex gap-2'>

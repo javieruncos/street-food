@@ -13,7 +13,7 @@ const PageMenu = () => {
                     />
                     <div className='capaPortada-menu'>
                         <div className='container'>
-                            <h2 className='display-1 fuenteTitle text-warning'>Nuestro Menu</h2>
+                            <h2 className='display-1 fuenteTitle'>Nuestro Menu</h2>
                             <p>
                                 Bienvenido a nuestro apetitoso blog, donde te
                                 llevamos en un viaje a través del vibrante <br /> y

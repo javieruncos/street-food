@@ -5,10 +5,14 @@
     position: relative;
 }
 
+.PortadaMenu h2{
+    color: yellow;
+}
 
 .PortadaMenu img{
    height: 100%;
    width: 100%;
+   object-fit: cover;
 }
 
 .capaPortada-menu{

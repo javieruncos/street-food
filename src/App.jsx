@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import PageMenu from './components/pages/PageMenu'
 import Testimonios from './components/pages/Testimonios'
 import PageUbicacion from "./components/pages/PageUbicacion"
+import PageEquipo from "./components/pages/PageEquipo"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path='/pageMenu' element={<PageMenu></PageMenu>}></Route>
             <Route path='/testimonios' element={<Testimonios></Testimonios>}></Route>
             <Route path='/pageUbicacion' element={<PageUbicacion></PageUbicacion>}></Route>
+            <Route path='/equipoChef' element={<PageEquipo></PageEquipo>}></Route>
           </Routes>
         </BrowserRouter>
       </div>

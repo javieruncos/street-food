@@ -14,15 +14,15 @@ const Inicio = () => {
                     <div className='Portada-Inicio'>
                         <img src="https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                         <div className='capaPortada'>
-                            <div className='containerTitulo-Portada'>
-                                <h1 className='display-2  text-warning fw-bold fuenteTitle'>Indulge in the delights of authentic</h1>
+                            <div className='containerTitulo-Portada container'>
+                                <h1 className='display-2  fw-bold fuenteTitle'>Indulge in the delights of authentic</h1>
                                 <p className='display-4 text-light fw-bold'>street food!</p>
                                 <p> take pride in offering a wide variety of mouthwatering
                                     dishes that are made with only the freshest and highest
                                     quality ingredients.
                                 </p>
-                                <div className='containerBtn-Inicio'>
-                                    <button>Visitanos Hoy</button>
+                                <div className='containerBtn-Inicio container'>
+                                    <button>Visitanos</button>
                                     <button>Ver Menu</button>
                                 </div>
                             </div>
