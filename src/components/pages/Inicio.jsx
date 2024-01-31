@@ -5,8 +5,14 @@ import { infoSucursales, infoSucursales2 } from '../../helpers/info';
 import SliderGalery from '../UiComponents/sliderGalery';
 import CardMenu from '../UiComponents/CardMenu';
 import PortadaUbicacion from '../UiComponents/PortadaUbicacion';
+import useProductos from '../../hooks/useProductos';
+import { NavItem } from 'react-bootstrap';
+import useCarrito from '../../hooks/useCarrito';
 
 const Inicio = () => {
+
+    const {listaProductos} = useProductos();    
+
     return (
         <>
             <section>
@@ -73,15 +79,12 @@ const Inicio = () => {
                             </p>
                         </div>
                         <div className='row my-5'>
-                           <CardMenu></CardMenu>
-                           <CardMenu></CardMenu>
-                           <CardMenu></CardMenu>
-                           <CardMenu></CardMenu>
-                           <CardMenu></CardMenu>
-                           <CardMenu></CardMenu>
-                           <CardMenu></CardMenu>
-                           <CardMenu></CardMenu>
-                           <CardMenu></CardMenu>
+                            {
+                                listaProductos.slice(0,6).map(producto => (
+                                    <CardMenu producto={producto} key={producto.id}></CardMenu>
+                                ))
+                            }
+                           
                            <div className="col-12 col-md-6"></div>
                         </div>
                     </div>

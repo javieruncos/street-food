@@ -1,9 +1,19 @@
 import React from 'react';
-import { Navbar ,NavDropdown,Container,Nav} from 'react-bootstrap';
+import { useState } from 'react';
+import { Navbar, NavDropdown, Container, Nav } from 'react-bootstrap';
+import ModalCarrito from './ModalCarrito';
 
 const NavMenu = () => {
-    return (
-        <Navbar expand="lg" className="bg-dark navbar-dark NavMenu">
+
+   
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    <>
+      <Navbar expand="lg" className="bg-dark navbar-dark NavMenu">
         <Container>
           <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -17,13 +27,15 @@ const NavMenu = () => {
               <Nav.Link href="/pageUbicacion">Ubicacion</Nav.Link>
             </Nav>
             <div className='py-2  d-flex gap-2'>
-                <button className='btn btn-warning'>Login</button>
-                <button className='btn btn-warning'>carrito</button>
+              <button className='btn btn-warning'>Login</button>
+              <button className='btn btn-warning' onClick={handleShow}>carrito</button>
             </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    );
+      <ModalCarrito show={show} handleClose={handleClose}></ModalCarrito>
+    </>
+  );
 };
 
 export default NavMenu;
