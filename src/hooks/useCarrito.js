@@ -52,7 +52,7 @@ const useCarrito = () => {
 
     } else {
       // Si el producto no está en el carrito, agregarlo con cantidad 1
-      const NuevoCarrito = [...carrito, { ...producto, cantidad: 1 }];
+      const NuevoCarrito = [...carrito, { ...producto, cantidad: cantidad }];
       localStorage.setItem("carritoFood", JSON.stringify(NuevoCarrito));
       
       const totalPrecioCarrito = NuevoCarrito.reduce(

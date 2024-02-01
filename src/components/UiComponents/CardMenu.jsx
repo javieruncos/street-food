@@ -10,9 +10,9 @@ const CardMenu = ({ producto }) => {
     return (
         <div className="col-12 col-md-6 col-lg-4">
             <div className='cardMenu my-4'>
-                <a href={`/detalleProducto/${producto.id}`} className='linkCard'>
+                <a href={`/detalleProducto/${producto._id}`} className='linkCard'>
                     <div className='headerCard'>
-                        <img src="https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                        <img src={producto.imagen} alt="" />
                     </div>
                 </a>
                 <div className='bodyCard container pt-4'>

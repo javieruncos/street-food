@@ -46,6 +46,7 @@ const PageDetalle = () => {
                             <div className='containerAdd'>
                                 <div className='cantidadProducto '>
                                    <input type="number" min={1}
+                                      value={cantidad}
                                     placeholder={cantidad}
                                      className='w-75' 
                                      onChange={changeCantidad}/>
