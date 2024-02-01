@@ -6,7 +6,7 @@ import ItemModal from './ItemModal';
 
 const ModalCarrito = ({show,handleClose}) => {
 
-    const {carrito} = useContext(carritoContext);
+    const {carrito,total} = useContext(carritoContext);
     return (
         <>
             <Modal show={show} onHide={handleClose}>
@@ -19,13 +19,14 @@ const ModalCarrito = ({show,handleClose}) => {
                             <ItemModal producto={producto}></ItemModal>
                         ))
                        }
+                       <div className='d-flex justify-content-between'>
+                          <p>Precio Total</p>
+                          <p>${total}</p>
+                       </div>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Close
-                    </Button>
-                    <Button variant="primary" onClick={handleClose}>
-                        Save Changes
+                    <Button variant="warning" className='w-100'>
+                       Confirmar Compra
                     </Button>
                 </Modal.Footer>
             </Modal>

@@ -28,7 +28,9 @@ const NavMenu = () => {
             </Nav>
             <div className='py-2  d-flex gap-2'>
               <button className='btn btn-warning'>Login</button>
-              <button className='btn btn-warning' onClick={handleShow}>carrito</button>
+              <button className='btn btn-warning' onClick={handleShow}>
+              <i className="bi bi-cart"></i>
+              </button>
             </div>
           </Navbar.Collapse>
         </Container>

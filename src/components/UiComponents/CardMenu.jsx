@@ -22,7 +22,9 @@ const CardMenu = ({ producto }) => {
                     </div>
                     <div className='d-flex justify-content-between align-items-center pb-5 container'>
                         <p className='fs-3 fw-bold fuenteTitle'>$ 17,99</p>
-                        <button onClick={() => { agregarAlCarrito(producto,cantidad) }}>carrito</button>
+                        <button className='btnCarrito mb-2' onClick={() => { agregarAlCarrito(producto,cantidad) }}>
+                        <i className="bi bi-cart"></i>
+                        </button>
                     </div>
                 </div>
             </div>

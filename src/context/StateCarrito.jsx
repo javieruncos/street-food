@@ -4,8 +4,10 @@ import { useState } from 'react';
 export const carritoContext = createContext()
 
 const StateCarrito = ({ children }) => {
-    const [carrito, setCarrito] = useState([])
-    const [total, setTotal] = useState(0);
+    const productosLocalStorage = JSON.parse(localStorage.getItem('carritoFood')) || [];
+    const totalPrecioLocalStorage = JSON.parse(localStorage.getItem('totalPrecioCarrito')) || 0; 
+    const [carrito, setCarrito] = useState(productosLocalStorage)
+    const [total, setTotal] = useState(totalPrecioLocalStorage);
     const [cantidad, setCantidad] = useState(1);
 
     return (

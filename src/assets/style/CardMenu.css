@@ -17,7 +17,7 @@
 }
 
 .cardMenu:hover{
-    scale: 1.05;
+    scale: 1.02;
     transition: 0.5s ease;
 }
 
@@ -38,4 +38,15 @@
     white-space: wrap;
     overflow: hidden; 
     text-overflow: ellipsis;
+}
+
+.btnCarrito{
+    padding: 5px 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: yellow;
+}
+
+.btnCarrito:hover{
+    scale: 1.05;
 }
