@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useState } from 'react';
+import "../../assets/style/MenuNav.css"
 import { Navbar, NavDropdown, Container, Nav } from 'react-bootstrap';
 import ModalCarrito from './ModalCarrito';
+import { carritoContext } from '../../context/StateCarrito';
 
 const NavMenu = () => {
-
-   
+  const {cantidadProductos} = useContext(carritoContext);
   const [show, setShow] = useState(false);
-
+   
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -27,9 +28,12 @@ const NavMenu = () => {
               <Nav.Link href="/pageUbicacion">Ubicacion</Nav.Link>
             </Nav>
             <div className='py-2  d-flex gap-2'>
-              <button className='btn btn-warning'>Login</button>
-              <button className='btn btn-warning' onClick={handleShow}>
-              <i className="bi bi-cart"></i>
+              <button className='btn btnLogin'>
+              <i className="bi bi-person-circle"></i>
+              </button>
+              <button className='btnCarrito' onClick={handleShow}>
+                <i className="bi bi-cart"></i>
+                <span>{cantidadProductos}</span>
               </button>
             </div>
           </Navbar.Collapse>

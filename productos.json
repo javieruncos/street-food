@@ -37,7 +37,7 @@
       {
         "nombreProducto": "Hamburguesa BBQ",
         "imagen": "https://static.nike.com/a/images/t_default/057c2bbd-d065-44eb-913f-51dd4f98d680/air-force-1-07-shoe-ZLZpmn.png",
-        "precio": "51",
+        "precio": 6.99,
         "descripcion": "Introducing our Classic Italian Pizza, a tantalizing masterpiece that embodies the essence of Italian gastronomy Crafted with passion and expertise, this pizza is a celebration of traditional flavors and time-honored techniques. Our Classic Italian Pizza starts with a hand-stretched, thin and crispy crust that forms the perfect foundation forthe symphony of flavors to come. Made with the finest quality ingredients, including premium mozzarella cheese, tangy tomato sauce, and a harmonious blend of herbs and spices, every bite delivers an explosion of authentic Italian taste. The secret to our Classic Italian Pizza lies in its simplicity. Each topping is carefully selected to enhancethe overall balance and showcase the natural flavors. From the classic Margherita with fresh basil and ripe tomatoes to the savory Prosciutto e Funghi with earthy mushrooms and delicate prosciutto, our pizza menu offers a variety of mouthwatering options to satisfy every palate. Buon appetito!",
         "categoria": "Hamburguesa",
         "ingredientes": [
@@ -71,7 +71,7 @@
       {
         "nombreProducto": "Hamburguesa Doble",
         "imagen": "https://th.bing.com/th/id/R.f0dfe6bb0560ad2472ca5be8d3e4ca64?rik=w4LPqmEEgVM24g&pid=ImgRaw&r=0",
-        "precio": "55",
+        "precio": 7.99,
         "descripcion": "Introducing our Classic Italian Pizza, a tantalizing masterpiece that embodies the essence of Italian gastronomy Crafted with passion and expertise, this pizza is a celebration of traditional flavors and time-honored techniques. Our Classic Italian Pizza starts with a hand-stretched, thin and crispy crust that forms the perfect foundation forthe symphony of flavors to come. Made with the finest quality ingredients, including premium mozzarella cheese, tangy tomato sauce, and a harmonious blend of herbs and spices, every bite delivers an explosion of authentic Italian taste. The secret to our Classic Italian Pizza lies in its simplicity. Each topping is carefully selected to enhancethe overall balance and showcase the natural flavors. From the classic Margherita with fresh basil and ripe tomatoes to the savory Prosciutto e Funghi with earthy mushrooms and delicate prosciutto, our pizza menu offers a variety of mouthwatering options to satisfy every palate. Buon appetito!",
         "categoria": "Hamburguesa",
         "ingredientes": [
@@ -350,7 +350,7 @@
       {
         "nombreProducto": "pizza especial",
         "imagen": "https://static.nike.com/a/images/t_default/057c2bbd-d065-44eb-913f-51dd4f98d680/air-force-1-07-shoe-ZLZpmn.png",
-        "precio": "233",
+        "precio": 12.99,
         "descripcion": "jadajhsdjhaskhjdakshdkashdkajhsdkajhsdkhaksdhkashdkashdkajajhskda",
         "categoria": "pizza",
         "ingredientes": [
@@ -361,7 +361,7 @@
       {
         "nombreProducto": "pizza especial",
         "imagen": "https://static.nike.com/a/images/t_default/057c2bbd-d065-44eb-913f-51dd4f98d680/air-force-1-07-shoe-ZLZpmn.png",
-        "precio": "233",
+        "precio": 12.99,
         "descripcion": "jadajhsdjhaskhjdakshdkashdkajhsdkajhsdkhaksdhkashdkashdkajajhskda",
         "categoria": "pizza",
         "ingredientes": [
@@ -372,7 +372,7 @@
       {
         "nombreProducto": "pizza especial",
         "imagen": "https://static.nike.com/a/images/t_default/057c2bbd-d065-44eb-913f-51dd4f98d680/air-force-1-07-shoe-ZLZpmn.png",
-        "precio": "233",
+        "precio": 12.99,
         "descripcion": "jadajhsdjhaskhjdakshdkashdkajhsdkajhsdkhaksdhkashdkashdkajajhskda",
         "categoria": "pizza",
         "ingredientes": [
@@ -383,7 +383,7 @@
       {
         "nombreProducto": "pizza especial",
         "imagen": "https://static.nike.com/a/images/t_default/057c2bbd-d065-44eb-913f-51dd4f98d680/air-force-1-07-shoe-ZLZpmn.png",
-        "precio": "233",
+        "precio": 12.99,
         "descripcion": "jadajhsdjhaskhjdakshdkashdkajhsdkajhsdkhaksdhkashdkashdkajajhskda",
         "categoria": "pizza",
         "ingredientes": [
@@ -394,7 +394,7 @@
       {
         "nombreProducto": "pizza especial",
         "imagen": "https://static.nike.com/a/images/t_default/057c2bbd-d065-44eb-913f-51dd4f98d680/air-force-1-07-shoe-ZLZpmn.png",
-        "precio": "233",
+        "precio": 12.99,
         "descripcion": "jadajhsdjhaskhjdakshdkashdkajhsdkajhsdkhaksdhkashdkashdkajajhskda",
         "categoria": "pizza",
         "ingredientes": [
@@ -405,7 +405,7 @@
       {
         "nombreProducto": "pizza especial",
         "imagen": "https://static.nike.com/a/images/t_default/057c2bbd-d065-44eb-913f-51dd4f98d680/air-force-1-07-shoe-ZLZpmn.png",
-        "precio": "233",
+        "precio":12.99,
         "descripcion": "jadajhsdjhaskhjdakshdkashdkajhsdkajhsdkhaksdhkashdkashdkajajhskda",
         "categoria": "pizza",
         "ingredientes": [
@@ -416,7 +416,7 @@
       {
         "nombreProducto": "pizza especial",
         "imagen": "https://static.nike.com/a/images/t_default/057c2bbd-d065-44eb-913f-51dd4f98d680/air-force-1-07-shoe-ZLZpmn.png",
-        "precio": "233",
+        "precio": 12.99,
         "descripcion": "jadajhsdjhaskhjdakshdkashdkajhsdkajhsdkhaksdhkashdkashdkajajhskda",
         "categoria": "pizza",
         "ingredientes": [
@@ -427,7 +427,7 @@
       {
         "nombreProducto": "pizza especial",
         "imagen": "https://static.nike.com/a/images/t_default/057c2bbd-d065-44eb-913f-51dd4f98d680/air-force-1-07-shoe-ZLZpmn.png",
-        "precio": "233",
+        "precio": 12.99,
         "descripcion": "jadajhsdjhaskhjdakshdkashdkajhsdkajhsdkhaksdhkashdkashdkajajhskda",
         "categoria": "pizza",
         "ingredientes": [
@@ -438,7 +438,7 @@
       {
         "nombreProducto": "pizza especial",
         "imagen": "https://static.nike.com/a/images/t_default/057c2bbd-d065-44eb-913f-51dd4f98d680/air-force-1-07-shoe-ZLZpmn.png",
-        "precio": "233",
+        "precio": 12.99,
         "descripcion": "jadajhsdjhaskhjdakshdkashdkajhsdkajhsdkhaksdhkashdkashdkajajhskda",
         "categoria": "pizza",
         "ingredientes": [
@@ -449,7 +449,7 @@
       {
         "nombreProducto": "pizza especial",
         "imagen": "https://static.nike.com/a/images/t_default/057c2bbd-d065-44eb-913f-51dd4f98d680/air-force-1-07-shoe-ZLZpmn.png",
-        "precio": "233",
+        "precio": 12.99,
         "descripcion": "jadajhsdjhaskhjdakshdkashdkajhsdkajhsdkhaksdhkashdkashdkajajhskda",
         "categoria": "pizza",
         "ingredientes": [
@@ -460,7 +460,7 @@
       {
         "nombreProducto": "pizza especial",
         "imagen": "https://static.nike.com/a/images/t_default/057c2bbd-d065-44eb-913f-51dd4f98d680/air-force-1-07-shoe-ZLZpmn.png",
-        "precio": "233",
+        "precio": 7.99,
         "descripcion": "jadajhsdjhaskhjdakshdkashdkajhsdkajhsdkhaksdhkashdkashdkajajhskda",
         "categoria": "pizza",
         "ingredientes": [
@@ -471,7 +471,7 @@
       {
         "nombreProducto": "pizza especial",
         "imagen": "https://static.nike.com/a/images/t_default/057c2bbd-d065-44eb-913f-51dd4f98d680/air-force-1-07-shoe-ZLZpmn.png",
-        "precio": "233",
+        "precio": 7.99,
         "descripcion": "jadajhsdjhaskhjdakshdkashdkajhsdkajhsdkhaksdhkashdkashdkajajhskda",
         "categoria": "pizza",
         "ingredientes": [
@@ -482,7 +482,7 @@
       {
         "nombreProducto": "pizza especial",
         "imagen": "https://static.nike.com/a/images/t_default/057c2bbd-d065-44eb-913f-51dd4f98d680/air-force-1-07-shoe-ZLZpmn.png",
-        "precio": "233",
+        "precio": 7.99,
         "descripcion": "jadajhsdjhaskhjdakshdkashdkajhsdkajhsdkhaksdhkashdkashdkajajhskda",
         "categoria": "pizza",
         "ingredientes": [
@@ -493,7 +493,7 @@
       {
         "nombreProducto": "pizza especial",
         "imagen": "https://static.nike.com/a/images/t_default/057c2bbd-d065-44eb-913f-51dd4f98d680/air-force-1-07-shoe-ZLZpmn.png",
-        "precio": "233",
+        "precio": 6.99,
         "descripcion": "jadajhsdjhaskhjdakshdkashdkajhsdkajhsdkhaksdhkashdkashdkajajhskda",
         "categoria": "pizza",
         "ingredientes": [
@@ -504,7 +504,7 @@
       {
         "nombreProducto": "pizza especial",
         "imagen": "https://static.nike.com/a/images/t_default/057c2bbd-d065-44eb-913f-51dd4f98d680/air-force-1-07-shoe-ZLZpmn.png",
-        "precio": "233",
+        "precio": 6.99,
         "descripcion": "jadajhsdjhaskhjdakshdkashdkajhsdkajhsdkhaksdhkashdkashdkajajhskda",
         "categoria": "pizza",
         "ingredientes": [
@@ -515,7 +515,7 @@
       {
         "nombreProducto": "pizza especial",
         "imagen": "https://static.nike.com/a/images/t_default/057c2bbd-d065-44eb-913f-51dd4f98d680/air-force-1-07-shoe-ZLZpmn.png",
-        "precio": "233",
+        "precio": 6.99,
         "descripcion": "jadajhsdjhaskhjdakshdkashdkajhsdkajhsdkhaksdhkashdkashdkajajhskda",
         "categoria": "pizza",
         "ingredientes": [

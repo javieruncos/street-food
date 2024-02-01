@@ -3,13 +3,11 @@ import useCarrito from '../../hooks/useCarrito';
 
 const ItemModal = ({producto}) => {
 
-  const {actualizarCantidad} = useCarrito()
+  const {actualizarCantidad,eliminarProductoCarrito} = useCarrito()
   const handleChangeCantidad = (event) => {
       const nuevaCantidad =parseInt(event.target.value) ;
       actualizarCantidad(producto.id, nuevaCantidad);
     };
-
-
 
     return (
         <>
@@ -26,8 +24,7 @@ const ItemModal = ({producto}) => {
                value={producto.cantidad}
                onChange={handleChangeCantidad}
               />
-              <button className='btnDelete-carrito'>X</button>
-              {/* <button className='btnDelete-carrito' onClick={()=>{eliminarProductoCarrito(producto)}}>X</button> */}
+              <button className='btnDelete-carrito' onClick={()=>{eliminarProductoCarrito(producto)}}>X</button>
             </div>
         </div>
         </>

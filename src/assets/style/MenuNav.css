@@ -1,0 +1,28 @@
+.btnCarrito {
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.btnCarrito span {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    padding: 1px 4px;
+    background-color: rgb(247, 76, 76);
+    border-radius: 50%;
+    color: white;
+}
+
+
+.btnLogin{
+    background-color: yellow;
+    padding: 5px 20px;
+}
+
+.btnLogin:hover{
+    background-color: yellow;
+    scale: 1.02;
+}
