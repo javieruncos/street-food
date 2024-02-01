@@ -10,3 +10,17 @@ export const listarProductos = async () => {
         console.log(error);
     }
 }
+
+
+export const obtenerProductoID = async(id) => {
+    try {
+        const respuesta = await fetch(`${urlProductos}/${id}`);
+        const producto = {
+            datos: await respuesta.json(),
+            status: respuesta.status
+        }
+        return producto;
+    } catch (error) {
+        console.log(error);
+    }   
+}

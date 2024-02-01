@@ -2,8 +2,10 @@ import React from 'react';
 import "../../assets/style/PageMenu.css";
 import CardMenu from "../../components/UiComponents/CardMenu";
 import PortadaUbicacion from "../UiComponents/PortadaUbicacion";
+import useProductos from '../../hooks/useProductos';
 
 const PageMenu = () => {
+     const {listaProductos} = useProductos()
     return (
         <section>
             <article>
@@ -36,15 +38,11 @@ const PageMenu = () => {
                 </div>
                 <div className='container mt-4'>
                     <div className='row'>
-                       <CardMenu></CardMenu>
-                       <CardMenu></CardMenu>
-                       <CardMenu></CardMenu>
-                       <CardMenu></CardMenu>
-                       <CardMenu></CardMenu>
-                       <CardMenu></CardMenu>
-                       <CardMenu></CardMenu>
-                       <CardMenu></CardMenu>
-                       <CardMenu></CardMenu>
+                        {
+                            listaProductos.map((producto)=>(
+                                <CardMenu producto={producto} key={producto.id}></CardMenu>
+                            ))
+                        }
                     </div>
                 </div>
             </article>

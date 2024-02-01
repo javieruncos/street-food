@@ -9,6 +9,7 @@ import Testimonios from './components/pages/Testimonios'
 import PageUbicacion from "./components/pages/PageUbicacion"
 import PageEquipo from "./components/pages/PageEquipo"
 import StateCarrito from "./context/StateCarrito"
+import PageDetalle from "./components/pages/PageDetalle"
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <Route path='/testimonios' element={<Testimonios></Testimonios>}></Route>
               <Route path='/pageUbicacion' element={<PageUbicacion></PageUbicacion>}></Route>
               <Route path='/equipoChef' element={<PageEquipo></PageEquipo>}></Route>
+              <Route path='/detalleProducto/:id' element={<PageDetalle></PageDetalle>}></Route>
             </Routes>
           </BrowserRouter>
         </div>
