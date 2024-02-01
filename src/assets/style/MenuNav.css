@@ -8,12 +8,17 @@
 
 .btnCarrito span {
     position: absolute;
-    right: -10px;
+    right: -15px;
     top: -10px;
-    padding: 1px 4px;
+    height:30px;
+    width: 30px;
+    padding: 5px 10px;
     background-color: rgb(247, 76, 76);
     border-radius: 50%;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
