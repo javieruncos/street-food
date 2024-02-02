@@ -6,9 +6,9 @@ import ModalCarrito from './ModalCarrito';
 import { carritoContext } from '../../context/StateCarrito';
 
 const NavMenu = () => {
-  const {cantidadProductos} = useContext(carritoContext);
+  const { cantidadProductos } = useContext(carritoContext);
   const [show, setShow] = useState(false);
-   
+
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -27,9 +27,13 @@ const NavMenu = () => {
               <Nav.Link href="/equipoChef">Equipo</Nav.Link>
               <Nav.Link href="/pageUbicacion">Ubicacion</Nav.Link>
             </Nav>
-            <div className='py-2  d-flex gap-2'>
+            <div className='py-2  d-flex gap-3'>
+              <a href="/registro" className='linkRegistro'>Registrarse</a>
               <button className='btn btnLogin'>
-              <i className="bi bi-person-circle"></i>
+                logout
+              </button>
+              <button className='btn btnLogin'>
+                <i className="bi bi-person-circle"></i>
               </button>
               <button className='btnCarrito' onClick={handleShow}>
                 <i className="bi bi-cart"></i>

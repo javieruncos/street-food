@@ -31,3 +31,13 @@
     background-color: yellow;
     scale: 1.02;
 }
+
+.linkRegistro{
+    text-decoration: none;
+    color: rgb(150, 150, 150);
+    padding-top: 5px;
+}
+
+.linkRegistro:hover{
+    color: rgba(255, 255, 255, 0.801);
+}

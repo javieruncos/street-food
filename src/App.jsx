@@ -13,6 +13,7 @@ import PageDetalle from "./components/pages/PageDetalle"
 import Admministrador from "./components/pages/Admministrador"
 import EditarProducto from "./components/pages/EditarProducto"
 import CrearProductos from "./components/pages/CrearProductos"
+import Registro from "./components/pages/Registro"
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
               <Route path='/administrador' element={<Admministrador></Admministrador>}></Route>
               <Route path='/editarProducto/:id' element={<EditarProducto></EditarProducto>}></Route>
               <Route path='/crearProducto' element={<CrearProductos></CrearProductos>}></Route>
+              <Route path='/registro' element={<Registro></Registro>}></Route>
             </Routes>
           </BrowserRouter>
         </div>
