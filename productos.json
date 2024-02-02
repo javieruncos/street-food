@@ -812,6 +812,15 @@
         "queso "
       ],
       "id": 68
+    },
+    {
+      "nombreProducto": "pizza especial 3000",
+      "imagen": "https://static.nike.com/a/images/t_default/057c2bbd-d065-44eb-913f-51dd4f98d680/air-force-1-07-shoe-ZLZpmn.png",
+      "precio": "2500",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.",
+      "ingredientes": " semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.",
+      "categoria": "pizza",
+      "id": 69
     }
   ]
 }

@@ -12,6 +12,28 @@ export const listarProductos = async () => {
 }
 
 
+export const crearProductoApi = async(dato)=>{
+
+     try {
+        const respuesta = await fetch(urlProductos,{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(dato)
+        })
+       
+        const producto = {
+            datos: await respuesta.json(),
+            status: respuesta.status
+        }
+        return producto
+     } catch (error) {
+        console.log(error)
+     }    
+}
+
+
 export const obtenerProductoID = async(id) => {
     try {
         const respuesta = await fetch(`${urlProductos}/${id}`);

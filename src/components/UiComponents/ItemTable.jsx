@@ -34,7 +34,7 @@ const ItemTable = ({producto,setProductosApi}) => {
     return (
         <>
             <tr>
-                <td>{producto._id}</td>
+                <td>{producto.id}</td>
                 <td>{producto.nombreProducto}</td>
                 <td>${producto.precio}</td>
                 <td className='d-flex gap-2'>

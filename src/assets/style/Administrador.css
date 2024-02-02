@@ -9,7 +9,9 @@
     border: 1px solid transparent;
     border-radius: 10px;
     background-color: yellow;
-    transition: 1s ease;
+    transition: 0.5s ease;
+    text-decoration: none;
+    color: black;
 }
 
 .btn-add:hover{

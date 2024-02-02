@@ -12,6 +12,7 @@ import StateCarrito from "./context/StateCarrito"
 import PageDetalle from "./components/pages/PageDetalle"
 import Admministrador from "./components/pages/Admministrador"
 import EditarProducto from "./components/pages/EditarProducto"
+import CrearProductos from "./components/pages/CrearProductos"
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
               <Route path='/detalleProducto/:id' element={<PageDetalle></PageDetalle>}></Route>
               <Route path='/administrador' element={<Admministrador></Admministrador>}></Route>
               <Route path='/editarProducto/:id' element={<EditarProducto></EditarProducto>}></Route>
+              <Route path='/crearProducto' element={<CrearProductos></CrearProductos>}></Route>
             </Routes>
           </BrowserRouter>
         </div>

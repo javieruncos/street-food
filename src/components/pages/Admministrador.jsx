@@ -35,7 +35,7 @@ const Admministrador = () => {
             <article className='container'>
                 <div className='containerTitle-admin  pt-5'>
                     <h2>Administrador</h2>
-                    <button className='btn-add'>agregar Producto</button>
+                    <a href='/crearProducto' className='btn-add'>agregar Producto</a>
                 </div>
                 <div className='container-Filtro pt-5'>
                     <input type="text" className='form-control inputFilter' placeholder='Buscar producto' onChange={handleChanceFiltro} />
