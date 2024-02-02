@@ -23,7 +23,7 @@ const NavMenu = () => {
               <Nav.Link href="/">Inicio</Nav.Link>
               <Nav.Link href="/pageMenu">Menu</Nav.Link>
               <Nav.Link href="/testimonios">Testimonios</Nav.Link>
-              <Nav.Link href="#link">Administrador</Nav.Link>
+              <Nav.Link href="/administrador">Administrador</Nav.Link>
               <Nav.Link href="/equipoChef">Equipo</Nav.Link>
               <Nav.Link href="/pageUbicacion">Ubicacion</Nav.Link>
             </Nav>

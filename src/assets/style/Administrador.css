@@ -1,0 +1,41 @@
+.containerTitle-admin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-add{
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: yellow;
+    transition: 1s ease;
+}
+
+.btn-add:hover{
+    scale: 1.02;
+    background-color: #191919;
+    color: white;
+}
+
+.container-Filtro{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+
+.inputFilter{
+    width: 350px;
+}
+
+.inputFilter:focus{
+    box-shadow: none;
+    border: 1px solid grey;
+}
+
+@media screen and (max-width:767px) {
+    .inputFilter{
+        width: 170px;
+    }
+}

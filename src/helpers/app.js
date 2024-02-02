@@ -24,3 +24,35 @@ export const obtenerProductoID = async(id) => {
         console.log(error);
     }   
 }
+
+export const editarProductoApi = async(id,producto)=>{
+    try {
+        const respuesta = await fetch(`${urlProductos}/${id}`,{
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(producto)
+        })
+        
+        return respuesta
+
+    } catch (error) {
+        console.log(error)
+        return false
+    }
+}
+
+
+export const borrarProductoApi = async(id)=>{
+    try {
+        const respuesta = await fetch(`${urlProductos}/${id}`,{
+            method: 'DELETE',
+        })
+        return respuesta
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+

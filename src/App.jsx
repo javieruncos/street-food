@@ -10,6 +10,8 @@ import PageUbicacion from "./components/pages/PageUbicacion"
 import PageEquipo from "./components/pages/PageEquipo"
 import StateCarrito from "./context/StateCarrito"
 import PageDetalle from "./components/pages/PageDetalle"
+import Admministrador from "./components/pages/Admministrador"
+import EditarProducto from "./components/pages/EditarProducto"
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
               <Route path='/pageUbicacion' element={<PageUbicacion></PageUbicacion>}></Route>
               <Route path='/equipoChef' element={<PageEquipo></PageEquipo>}></Route>
               <Route path='/detalleProducto/:id' element={<PageDetalle></PageDetalle>}></Route>
+              <Route path='/administrador' element={<Admministrador></Admministrador>}></Route>
+              <Route path='/editarProducto/:id' element={<EditarProducto></EditarProducto>}></Route>
             </Routes>
           </BrowserRouter>
         </div>
