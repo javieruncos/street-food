@@ -14,6 +14,7 @@ import Admministrador from "./components/pages/Admministrador"
 import EditarProducto from "./components/pages/EditarProducto"
 import CrearProductos from "./components/pages/CrearProductos"
 import Registro from "./components/pages/Registro"
+import Login from "./components/pages/Login"
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
               <Route path='/editarProducto/:id' element={<EditarProducto></EditarProducto>}></Route>
               <Route path='/crearProducto' element={<CrearProductos></CrearProductos>}></Route>
               <Route path='/registro' element={<Registro></Registro>}></Route>
+              <Route path='/login' element={<Login></Login>}></Route>
             </Routes>
           </BrowserRouter>
         </div>

@@ -1,5 +1,12 @@
 {
-    "usuarios":[
-    
-    ]
+  "usuarios": [
+    {
+      "nombre": "javier",
+      "apellido": "uncos",
+      "email": "javier@mail.com",
+      "password": "123456789",
+      "perfil": "usuario",
+      "id": 1
+    }
+  ]
 }

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { useState } from 'react';
 import "../../assets/style/MenuNav.css"
-import { Navbar, NavDropdown, Container, Nav } from 'react-bootstrap';
+import { Navbar, Container, Nav } from 'react-bootstrap';
 import ModalCarrito from './ModalCarrito';
 import { carritoContext } from '../../context/StateCarrito';
 
@@ -32,9 +32,9 @@ const NavMenu = () => {
               <button className='btn btnLogin'>
                 logout
               </button>
-              <button className='btn btnLogin'>
+              <a href='/login' className='btn btnLogin'>
                 <i className="bi bi-person-circle"></i>
-              </button>
+              </a>
               <button className='btnCarrito' onClick={handleShow}>
                 <i className="bi bi-cart"></i>
                 <span>{cantidadProductos}</span>

@@ -32,7 +32,7 @@ const Admministrador = () => {
 
     return (
         <section>
-            <article className='container'>
+            <article className='container mt-5'>
                 <div className='containerTitle-admin  pt-5'>
                     <h2>Administrador</h2>
                     <a href='/crearProducto' className='btn-add'>agregar Producto</a>

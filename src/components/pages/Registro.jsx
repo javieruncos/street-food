@@ -4,9 +4,11 @@ import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { crearUsuarios } from '../../helpers/usuarios';
+import useUsuarios from '../../hooks/useUsuarios';
 
 const Registro = () => {
-
+    
+    const {listaUsuarios}= useUsuarios()
     const { register, handleSubmit, formState: { errors } ,reset} = useForm();
     const navigate = useNavigate()
     
