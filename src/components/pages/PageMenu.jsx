@@ -3,9 +3,18 @@ import "../../assets/style/PageMenu.css";
 import CardMenu from "../../components/UiComponents/CardMenu";
 import PortadaUbicacion from "../UiComponents/PortadaUbicacion";
 import useProductos from '../../hooks/useProductos';
+import useFiltro from '../../hooks/useFiltro';
 
 const PageMenu = () => {
      const {listaProductos} = useProductos()
+     const {filtroProductos,filtro,setFiltro} = useFiltro()
+     const productosFiltrados = filtroProductos(listaProductos)
+     
+     const categoriaFiltrada = (text) => {
+        setFiltro({ ...filtro, categoria: text })
+    }
+
+
     return (
         <section>
             <article>
@@ -29,17 +38,17 @@ const PageMenu = () => {
                 <div className='mt-5 container'>
                     <div className='menuBusqueda'>
                         <div>
-                            <button className='btnBusqueda'>Todos</button>
-                            <button className='btnBusqueda'>Pizza</button>
-                            <button className='btnBusqueda'>Hamburguesa</button>
-                            <button className='btnBusqueda'>Tacos</button>
+                            <button className='btnBusqueda' onClick={() => { categoriaFiltrada("All") }}>Todos</button>
+                            <button className='btnBusqueda'  onClick={() => { categoriaFiltrada("pizza") }} >Pizza</button>
+                            <button className='btnBusqueda' onClick={() => { categoriaFiltrada("Hamburguesa") }} >Hamburguesa</button>
+                            <button className='btnBusqueda' onClick={() => { categoriaFiltrada("tacos") }}>Tacos</button>
                         </div>
                     </div>
                 </div>
                 <div className='container mt-4'>
                     <div className='row'>
                         {
-                            listaProductos.map((producto)=>(
+                            productosFiltrados.map((producto)=>(
                                 <CardMenu producto={producto} key={producto.id}></CardMenu>
                             ))
                         }
