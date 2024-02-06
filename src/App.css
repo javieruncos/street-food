@@ -1,14 +1,16 @@
-.App{
+.App {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 
-.MainSection{
+.MainSection {
     flex-grow: 1;
 }
 
 
-.fuenteTitle{
+.fuenteTitle {
     font-family: 'Permanent Marker', cursive;
 }

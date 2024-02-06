@@ -29,7 +29,7 @@ const Testimonios = () => {
                     </div>
                 </div>
             </article>
-            <article>
+            <article className='mb-5'>
                 <div className='container'>
                     <h3 className='display-3 fw-bold fuenteTitle'>Galeria</h3>
                     <p>Follow us on social media to stay up-to-date on our location and menu,
