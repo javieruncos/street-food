@@ -18,6 +18,7 @@ import Login from "./components/pages/Login"
 import StateUsuarios from "./context/stateUsuarios"
 import RutasProtegidas from "./routes/RutasProtegidas"
 import RutasAdmin from "./routes/RutasAdmin"
+import FooterMenu from "./components/common/FooterMenu"
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
                   </RutasProtegidas>
                 }></Route>
               </Routes>
+              <FooterMenu></FooterMenu>
             </BrowserRouter>
           </div>
         </StateCarrito>
