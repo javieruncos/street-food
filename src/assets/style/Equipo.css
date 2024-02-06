@@ -1,7 +1,6 @@
 .portadaIeam{
     height: 450px;
     width: 100%;
-    background-color: red;
     position: relative;
 }
 
@@ -16,7 +15,7 @@
     object-fit: cover;
 }
 
-.portadaIeam div{
+.capa-portada{
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.548);
@@ -108,4 +107,10 @@
     background-color: black;
     color: yellow;
     border: 1px solid yellow;
+}
+
+@media screen and (max-width:767px) {
+    .capa-portada div{
+        width: 330px;
+    }
 }

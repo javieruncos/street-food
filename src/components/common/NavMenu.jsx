@@ -1,16 +1,17 @@
 import React, { useContext } from 'react';
 import { useState } from 'react';
-import "../../assets/style/MenuNav.css"
+import "../../assets/style/MenuNav.css";
+import logoFood from "../../assets/img/logoFood.png";
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import ModalCarrito from './ModalCarrito';
 import { carritoContext } from '../../context/StateCarrito';
-import StateUsuarios, { usuarioState } from '../../context/stateUsuarios';
+import { usuarioState } from '../../context/stateUsuarios';
 import { useNavigate } from 'react-router-dom';
 
 const NavMenu = () => {
   const { cantidadProductos } = useContext(carritoContext);
   const [show, setShow] = useState(false);
-  const { usuario ,setUsuario} = useContext(usuarioState)
+  const { usuario, setUsuario } = useContext(usuarioState)
   const navigate = useNavigate()
 
   const handleClose = () => setShow(false);
@@ -27,7 +28,12 @@ const NavMenu = () => {
     <>
       <Navbar expand="lg" className="bg-dark navbar-dark NavMenu">
         <Container>
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+          <Navbar.Brand href="#home">
+            <div className='d-flex gap-3 justify-content-center align-items-center pt-1 mb-1'>
+              <img src={logoFood} alt="" className='logoFood' />
+              <span className='fontGlobal pb-1'>Street Food</span>
+            </div>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -47,7 +53,7 @@ const NavMenu = () => {
                 !usuario.nombre ? <>
                   <a href="/registro" className='linkRegistro'>Registrarse</a>
                 </> : <></>
-              } 
+              }
               {
                 usuario.nombre ? <>
                   <button className='btn btnLogin' onClick={logout}>

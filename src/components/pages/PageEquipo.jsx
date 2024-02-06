@@ -11,24 +11,26 @@ const PageEquipo = () => {
         <div>
             <div className='portadaIeam'>
                 <img src="https://images.pexels.com/photos/5779787/pexels-photo-5779787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-                <div>
+                <div className='capa-portada'>
                     <h2 className='display-2 fw-bold fuenteTitle' data-aos="fade-up">Nuestro Equipo</h2>
-                    <p data-aos="fade-up">Conoce a las personas detrás de nuestro éxito y descubre las habilidades y
-                        talentos únicos <br /> que hacen de nuestro equipo una fuerza imparable en
-                        nuestra industria.
-                    </p>
+                    <div>
+                        <p data-aos="fade-up">Conoce a las personas detrás de nuestro éxito y descubre las habilidades y
+                            talentos únicos <br /> que hacen de nuestro equipo una fuerza imparable en
+                            nuestra industria.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div className='container my-5'>
                 <div className='row' data-aos="fade-up">
                     {
-                        infoChef.map((item)=>(
+                        infoChef.map((item) => (
                             <CardInfoChef item={item} key={item.id}></CardInfoChef>
                         ))
                     }
                 </div>
             </div>
-             <AcordeonPreguntas></AcordeonPreguntas>
+            <AcordeonPreguntas></AcordeonPreguntas>
             <div>
                 <PortadaUbicacion></PortadaUbicacion>
             </div>

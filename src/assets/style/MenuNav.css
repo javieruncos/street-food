@@ -50,3 +50,7 @@
 .linkRegistro:hover{
     color: rgba(255, 255, 255, 0.801);
 }
+
+.logoFood{
+    height: 40px;
+}
