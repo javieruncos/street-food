@@ -1,10 +1,33 @@
+import { useNavigate } from 'react-router-dom';
 import React from 'react';
 import "../../assets/style/Login.css"
 import { useForm } from 'react-hook-form';
+import { loginUsuario, obtenerUsuarios } from '../../helpers/usuarios';
+import { useContext } from 'react';
+import { usuarioState } from '../../context/stateUsuarios';
+import Swal from 'sweetalert2';
 
 const Login = () => {
+    const {usuario ,setUsuario}= useContext(usuarioState)
+    const { register, handleSubmit, formState: { errors }, reset } = useForm();
+    const navigate = useNavigate()
 
-    const { register, handleSubmit, formState: { errors }, reset } = useForm()
+    const onSubmit = (data) => {
+        loginUsuario(data).then((respuesta) => {
+            console.log(respuesta.data)
+           
+            if (respuesta.status === 200) {
+                console.log("el usuario existe")
+                localStorage.setItem("usuarioFood", JSON.stringify(respuesta.data))
+                setUsuario(respuesta.data)
+                reset()
+                navigate("/")
+            } else {
+                Swal.fire("error inesperado", "usuario o contraseña incorrectos", "error")
+            }
+        })
+    }
+
 
     return (
         <div className='loginPage'>
@@ -12,7 +35,7 @@ const Login = () => {
                 <div className='pt-5 container'>
                     <div className='containerLogin mx-auto container'>
                         <h2 className='text-center fontGlobal display-6 pt-3'>Iniciar Sesion</h2>
-                        <form action="" className='py-3'>
+                        <form action="" className='py-3' onSubmit={handleSubmit(onSubmit)}>
                             <div>
                                 <input type="email" placeholder='Usuario' className='form-control mb-3'
                                     {...register("email", {

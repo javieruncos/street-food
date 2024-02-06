@@ -4,13 +4,24 @@ import "../../assets/style/MenuNav.css"
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import ModalCarrito from './ModalCarrito';
 import { carritoContext } from '../../context/StateCarrito';
+import StateUsuarios, { usuarioState } from '../../context/stateUsuarios';
+import { useNavigate } from 'react-router-dom';
 
 const NavMenu = () => {
   const { cantidadProductos } = useContext(carritoContext);
   const [show, setShow] = useState(false);
+  const { usuario ,setUsuario} = useContext(usuarioState)
+  const navigate = useNavigate()
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const logout = () => {
+    localStorage.removeItem("usuarioFood")
+    setUsuario({})
+    navigate("/")
+
+  }
 
   return (
     <>
@@ -23,18 +34,31 @@ const NavMenu = () => {
               <Nav.Link href="/">Inicio</Nav.Link>
               <Nav.Link href="/pageMenu">Menu</Nav.Link>
               <Nav.Link href="/testimonios">Testimonios</Nav.Link>
-              <Nav.Link href="/administrador">Administrador</Nav.Link>
               <Nav.Link href="/equipoChef">Equipo</Nav.Link>
               <Nav.Link href="/pageUbicacion">Ubicacion</Nav.Link>
+              {
+                usuario.perfil === "Administrador" ? <>
+                  <Nav.Link href="/administrador">Administrador</Nav.Link>
+                </> : <></>
+              }
             </Nav>
             <div className='py-2  d-flex gap-3'>
-              <a href="/registro" className='linkRegistro'>Registrarse</a>
-              <button className='btn btnLogin'>
-                logout
-              </button>
-              <a href='/login' className='btn btnLogin'>
-                <i className="bi bi-person-circle"></i>
-              </a>
+              {
+                !usuario.nombre ? <>
+                  <a href="/registro" className='linkRegistro'>Registrarse</a>
+                </> : <></>
+              } 
+              {
+                usuario.nombre ? <>
+                  <button className='btn btnLogin' onClick={logout}>
+                    logout
+                  </button>
+                </> : <>
+                  <a href='/login' className='btn btnLogin'>
+                    <i className="bi bi-person-circle"></i>
+                  </a>
+                </>
+              }
               <button className='btnCarrito' onClick={handleShow}>
                 <i className="bi bi-cart"></i>
                 <span>{cantidadProductos}</span>

@@ -15,30 +15,37 @@ import EditarProducto from "./components/pages/EditarProducto"
 import CrearProductos from "./components/pages/CrearProductos"
 import Registro from "./components/pages/Registro"
 import Login from "./components/pages/Login"
+import StateUsuarios from "./context/stateUsuarios"
+import RutasProtegidas from "./routes/RutasProtegidas"
+import RutasAdmin from "./routes/RutasAdmin"
 
 function App() {
   return (
     <>
-      <StateCarrito>
-        <div className='App'>
-          <BrowserRouter>
-            <NavMenu></NavMenu>
-            <Routes>
-              <Route path='/' element={<Inicio></Inicio>}></Route>
-              <Route path='/pageMenu' element={<PageMenu></PageMenu>}></Route>
-              <Route path='/testimonios' element={<Testimonios></Testimonios>}></Route>
-              <Route path='/pageUbicacion' element={<PageUbicacion></PageUbicacion>}></Route>
-              <Route path='/equipoChef' element={<PageEquipo></PageEquipo>}></Route>
-              <Route path='/detalleProducto/:id' element={<PageDetalle></PageDetalle>}></Route>
-              <Route path='/administrador' element={<Admministrador></Admministrador>}></Route>
-              <Route path='/editarProducto/:id' element={<EditarProducto></EditarProducto>}></Route>
-              <Route path='/crearProducto' element={<CrearProductos></CrearProductos>}></Route>
-              <Route path='/registro' element={<Registro></Registro>}></Route>
-              <Route path='/login' element={<Login></Login>}></Route>
-            </Routes>
-          </BrowserRouter>
-        </div>
-      </StateCarrito>
+      <StateUsuarios>
+        <StateCarrito>
+          <div className='App'>
+            <BrowserRouter>
+              <NavMenu></NavMenu>
+              <Routes>
+                <Route path='/' element={<Inicio></Inicio>}></Route>
+                <Route path='/pageMenu' element={<PageMenu></PageMenu>}></Route>
+                <Route path='/testimonios' element={<Testimonios></Testimonios>}></Route>
+                <Route path='/pageUbicacion' element={<PageUbicacion></PageUbicacion>}></Route>
+                <Route path='/equipoChef' element={<PageEquipo></PageEquipo>}></Route>
+                <Route path='/detalleProducto/:id' element={<PageDetalle></PageDetalle>}></Route>
+                <Route path='/registro' element={<Registro></Registro>}></Route>
+                <Route path='/login' element={<Login></Login>}></Route>
+                <Route path="/administrador/*" element={
+                  <RutasProtegidas>
+                    <RutasAdmin></RutasAdmin>
+                  </RutasProtegidas>
+                }></Route>
+              </Routes>
+            </BrowserRouter>
+          </div>
+        </StateCarrito>
+      </StateUsuarios>
     </>
   )
 }

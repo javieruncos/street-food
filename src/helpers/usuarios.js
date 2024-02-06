@@ -1,4 +1,7 @@
 const urlUser = import.meta.env.VITE_APP_USUARIOS;
+const urlUserlogin = import.meta.env.VITE_APP_USUARIOSLOGIN;
+
+
 
 export const crearUsuarios = async(data)=>{
     try {
@@ -31,3 +34,29 @@ export const obtenerUsuarios = async()=>{
         console.log(error)
     }
 }
+
+export const loginUsuario = async (dato) => {
+    try {
+      const respuesta = await fetch(urlUserlogin, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(dato),
+      });
+  
+      if (respuesta.status !== 200) {
+        return false;
+      }
+  
+      const usuario = {
+        data: await respuesta.json(),
+        status: respuesta.status,
+      };
+  
+      return usuario;
+    } catch (error) {
+      console.log(error);
+      return false;
+    }
+  };

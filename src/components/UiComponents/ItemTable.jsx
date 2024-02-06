@@ -34,12 +34,12 @@ const ItemTable = ({producto,setProductosApi}) => {
     return (
         <>
             <tr>
-                <td>{producto.id}</td>
+                <td>{producto._id}</td>
                 <td>{producto.nombreProducto}</td>
                 <td>${producto.precio}</td>
                 <td className='d-flex gap-2'>
-                    <a  href={`/editarProducto/${producto.id}`} className='btn btn-warning'>editar</a>
-                    <button className='btn btn-danger'onClick={()=>{borrarProducto(producto.id)}}>borrar</button>
+                    <a  href={`administrador/editarProducto/${producto._id}`} className='btn btn-warning'>editar</a>
+                    <button className='btn btn-danger'onClick={()=>{borrarProducto(producto._id)}}>borrar</button>
                 </td>
             </tr>
         </>

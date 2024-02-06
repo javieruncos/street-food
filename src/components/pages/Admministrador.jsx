@@ -35,7 +35,7 @@ const Admministrador = () => {
             <article className='container mt-5'>
                 <div className='containerTitle-admin  pt-5'>
                     <h2>Administrador</h2>
-                    <a href='/crearProducto' className='btn-add'>agregar Producto</a>
+                    <a href='administrador/crearProducto' className='btn-add'>agregar Producto</a>
                 </div>
                 <div className='container-Filtro pt-5'>
                     <input type="text" className='form-control inputFilter' placeholder='Buscar producto' onChange={handleChanceFiltro} />
@@ -62,9 +62,9 @@ const Admministrador = () => {
                             {
 
                                 productosFiltrados === "" ? productosApi.map((producto) => (
-                                    <ItemTable producto={producto} key={producto.id} setProductosApi={setProductosApi}></ItemTable>
+                                    <ItemTable producto={producto} key={producto._id} setProductosApi={setProductosApi}></ItemTable>
                                 )) : resultadoFiltro.map((producto) => (
-                                    <ItemTable producto={producto} key={producto.id} setProductosApi={setProductosApi}></ItemTable>
+                                    <ItemTable producto={producto} key={producto._id} setProductosApi={setProductosApi}></ItemTable>
                                 ))
 
                             }

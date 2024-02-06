@@ -13,11 +13,11 @@ const useCarrito = () => {
 
   const agregarAlCarrito = (producto, cantidad) => {
     // Verificar si el producto ya está en el carrito
-    const productoExistente = carrito.find((item) => item.id === producto.id);
+    const productoExistente = carrito.find((item) => item._id === producto._id);
 
     if (productoExistente) {
       const carritoActualizado = carrito.map((item) =>
-        item.id === producto.id
+        item._id === producto._id
           ? { ...item, cantidad: item.cantidad + cantidad }
           : item
       );
@@ -131,7 +131,7 @@ const useCarrito = () => {
   };
 
   const eliminarProductoCarrito = (producto)=>{
-    const carritoFiltrado = carrito.filter(item => item.id !== producto.id)
+    const carritoFiltrado = carrito.filter(item => item._id !== producto._id)
     if(carritoFiltrado){
 
       const nuevaCantidad = carritoFiltrado.reduce(
