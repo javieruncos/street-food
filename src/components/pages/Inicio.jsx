@@ -21,11 +21,12 @@ const Inicio = () => {
                         <img src="https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                         <div className='capaPortada'>
                             <div className='containerTitulo-Portada container'>
-                                <h1 className='display-2  fw-bold fuenteTitle'>Indulge in the delights of authentic</h1>
+                                <h1 className='display-4  fw-bold fuenteTitle'>Déjate llevar por los placeres de lo auténtico.</h1>
                                 <p className='display-4 text-light fw-bold'>street food!</p>
-                                <p> take pride in offering a wide variety of mouthwatering
-                                    dishes that are made with only the freshest and highest
-                                    quality ingredients.
+                                <p>
+                                    Nos enorgullece ofrecer una amplia variedad de platos irresistibles
+                                    elaborados únicamente con
+                                    ingredientes frescos y de la más alta calidad.
                                 </p>
                                 <div className='containerBtn-Inicio container'>
                                     <a href='/pageUbicacion'>Visitanos</a>
@@ -39,9 +40,9 @@ const Inicio = () => {
                     <div className='sucursales'>
                         <div className='containerTitulo-sucursales'>
                             <h2 className='display-2  pt-3 fw-bold fuenteTitle'>Visitanos</h2>
-                            <p>Indulge in mouthwatering dishes bursting with savory flavors
-                                Our tempting <br />  assortment of street food is sure to satisfy
-                                your every craving.
+                            <p>
+                                Déjate llevar por deliciosos platos llenos de sabores irresistibles. Nuestra
+                                tentadora variedad de comida callejera seguramente satisfará todos tus antojos.
                             </p>
                         </div>
                         <div className='container mt-3'>
@@ -71,11 +72,12 @@ const Inicio = () => {
             <section>
                 <article className='container my-5'>
                     <div className='Menu-Inicio'>
-                        <div className='text-center '>
+                        <div className='text-center tituloMenu container'>
                             <h2 className='display-3 fw-bold fuenteTitle'>Nuestro Menu</h2>
-                            <p>Our signature dishes are prepared on-site
-                                by our experienced chefs, <br /> who bring their
-                                unique flair and expertise to every meal.
+                            <p>
+                                Nuestros platos distintivos son preparados en el lugar por nuestros
+                                experimentados chefs, <br /> quienes aportan su toque único y experiencia a
+                                cada comida.
                             </p>
                         </div>
                         <div className='row my-5'>

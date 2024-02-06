@@ -264,6 +264,10 @@ Sucursales******************************* */
         font-weight: bold;
     }
 
+    .Menu-Inicio .tituloMenu{
+        width: 320px;
+    }
+
     /* ********slider*********** */
 
     .galeria {

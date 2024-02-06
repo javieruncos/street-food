@@ -16,12 +16,12 @@ const CardMenu = ({ producto }) => {
                     </div>
                 </a>
                 <div className='bodyCard container pt-4'>
-                    <p className='fs-4 fw-bold'>{producto.nombreProducto}</p>
+                    <p className=' fw-bold nombreProducto'>{producto.nombreProducto}</p>
                     <div>
                         <p>{producto.ingredientes}</p>
                     </div>
                     <div className='d-flex justify-content-between align-items-center pb-5 container'>
-                        <p className='fs-3 fw-bold fuenteTitle'>$ 17,99</p>
+                        <p className='fs-3 fw-bold fuenteTitle'>$ {producto.precio}</p>
                         <button className='btnCarrito mb-2' onClick={() => { agregarAlCarrito(producto,cantidad) }}>
                         <i className="bi bi-cart"></i>
                         </button>
