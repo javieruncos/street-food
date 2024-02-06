@@ -35,6 +35,8 @@
     border-radius: 10px;
     background-color: yellow;
     transition: 0.5s ease;
+    text-decoration: none;
+    color: black;
 }
 
 .btn-Ubi:hover{

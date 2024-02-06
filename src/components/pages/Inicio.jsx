@@ -11,7 +11,7 @@ import useCarrito from '../../hooks/useCarrito';
 
 const Inicio = () => {
 
-    const {listaProductos} = useProductos();    
+    const { listaProductos } = useProductos();
 
     return (
         <>
@@ -28,8 +28,8 @@ const Inicio = () => {
                                     quality ingredients.
                                 </p>
                                 <div className='containerBtn-Inicio container'>
-                                    <button>Visitanos</button>
-                                    <button>Ver Menu</button>
+                                    <a href='/pageUbicacion'>Visitanos</a>
+                                    <a href='/pageMenu'>Ver Menu</a>
                                 </div>
                             </div>
                         </div>
@@ -38,7 +38,7 @@ const Inicio = () => {
                 <article>
                     <div className='sucursales'>
                         <div className='containerTitulo-sucursales'>
-                            <h2 className='display-2  pt-5 fw-bold fuenteTitle'>Visitanos</h2>
+                            <h2 className='display-2  pt-3 fw-bold fuenteTitle'>Visitanos</h2>
                             <p>Indulge in mouthwatering dishes bursting with savory flavors
                                 Our tempting <br />  assortment of street food is sure to satisfy
                                 your every craving.
@@ -80,17 +80,18 @@ const Inicio = () => {
                         </div>
                         <div className='row my-5'>
                             {
-                                listaProductos.slice(0,6).map(producto => (
+                                listaProductos.slice(0, 9).map(producto => (
                                     <CardMenu producto={producto} key={producto.id}></CardMenu>
                                 ))
                             }
-                           
-                           <div className="col-12 col-md-6"></div>
+                        </div>
+                        <div className='d-flex justify-content-center'>
+                            <a href='/pageMenu' className='btnRowMenu'>Ir al menu</a>
                         </div>
                     </div>
                 </article>
                 <article>
-                   <PortadaUbicacion></PortadaUbicacion>
+                    <PortadaUbicacion></PortadaUbicacion>
                 </article>
             </section>
         </>
