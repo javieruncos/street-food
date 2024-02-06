@@ -6,8 +6,11 @@ import { useEffect, useState } from 'react';
 import { obtenerProductoID } from '../../helpers/app';
 import { carritoContext } from '../../context/StateCarrito';
 import useCarrito from '../../hooks/useCarrito';
+import useProductos from '../../hooks/useProductos';
+import CardMenu from '../UiComponents/CardMenu';
 
 const PageDetalle = () => {
+    const {listaProductos} = useProductos()
     const [productoDetalle, setProductoDetalle] = useState({})
     const { cantidad, setCantidad } = useContext(carritoContext)
     const { agregarAlCarrito } = useCarrito()
@@ -75,6 +78,18 @@ const PageDetalle = () => {
                     <p>
                         {productoDetalle.descripcion}
                     </p>
+                </div>
+            </article>
+            <article>
+                <div className='my-5'>
+                    <h3 className='fs-1 fuente-detalle'>recomendados</h3>
+                    <div className='row'>
+                        {
+                            listaProductos.slice(0,6).map((producto)=>(
+                                <CardMenu producto={producto} key={producto._id}></CardMenu>
+                            ))
+                        }                        
+                    </div>
                 </div>
             </article>
         </section>

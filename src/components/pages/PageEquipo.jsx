@@ -3,6 +3,7 @@ import "../../assets/style/Equipo.css"
 import { infoChef } from '../../helpers/infoTeam';
 import CardInfoChef from '../UiComponents/CardInfoChef';
 import PortadaUbicacion from '../UiComponents/PortadaUbicacion';
+import AcordeonPreguntas from '../UiComponents/AcordeonPreguntas';
 
 
 const PageEquipo = () => {
@@ -27,18 +28,7 @@ const PageEquipo = () => {
                     }
                 </div>
             </div>
-            <div className='container my-5' data-aos="fade-up">
-                <h3 className='display-5 fuenteTitle'>Un Poco de nuestra Historia</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga et atque possimus
-                    perspiciatis nemo nam quod saepe libero iusto. Quia saepe quasi animi accusantium excepturi
-                    odit ipsam error dolorum culpa et ipsa nisi ea consequatur reprehenderit, exercitationem ad,
-                    quibusdam nesciunt officiis nam eos! Dicta sequi corrupti aliquam praesentium facilis quam cum!
-                    Dolores neque beatae ipsa fugiat architecto quia, rem repellendus, perferendis non sapiente cumque?
-                    Tempora earum officiis similique explicabo sed atque quaerat cum, consequuntur aliquid ullam
-                    architecto exercitationem voluptatem, molestias libero, rerum velit? Fuga, nam fugiat doloremque,
-                    necessitatibus quae beatae quia expedita, voluptatum ducimus sunt quas optio rerum autem!
-                </p>
-            </div>
+             <AcordeonPreguntas></AcordeonPreguntas>
             <div>
                 <PortadaUbicacion></PortadaUbicacion>
             </div>
