@@ -16,7 +16,7 @@ const PageMenu = () => {
 
 
     return (
-        <section>
+        <section className='MainSection'>
             <article>
                 <div className='PortadaMenu'>
                     <img src="https://images.pexels.com/photos/106343/pexels-photo-106343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

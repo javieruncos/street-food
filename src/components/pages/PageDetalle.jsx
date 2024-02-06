@@ -29,7 +29,7 @@ const PageDetalle = () => {
     }
 
     return (
-        <section className='container mt-5 pt-4'>
+        <section className='container mt-5 pt-4 MainSection'>
             <div className='mt-3'>
                 <Breadcrumb>
                     <Breadcrumb.Item href="/">Inicio</Breadcrumb.Item>

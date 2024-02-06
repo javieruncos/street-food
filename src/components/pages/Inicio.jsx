@@ -15,7 +15,7 @@ const Inicio = () => {
 
     return (
         <>
-            <section>
+            <section className='MainSection'>
                 <article>
                     <div className='Portada-Inicio'>
                         <img src="https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />

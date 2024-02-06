@@ -85,6 +85,10 @@
         font-size: 30px;
     
      }
+
+     .copy{
+        text-align: center;
+     }
 }
 @media screen and (max-width:991px) {
     .nameFooter{

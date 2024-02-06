@@ -3,7 +3,7 @@ import "../../assets/style/PageUbicacion.css"
 
 const PageUbicacion = () => {
     return (
-        <div>
+        <div className='MainSection'>
             <div className=" container my-5">
                 <div className='row'>
                     <div className='col-12 col-md-6 col-lg-6'>

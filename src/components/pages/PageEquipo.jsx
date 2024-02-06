@@ -8,7 +8,7 @@ import AcordeonPreguntas from '../UiComponents/AcordeonPreguntas';
 
 const PageEquipo = () => {
     return (
-        <div>
+        <div className='MainSection'>
             <div className='portadaIeam'>
                 <img src="https://images.pexels.com/photos/5779787/pexels-photo-5779787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                 <div className='capa-portada'>

@@ -76,7 +76,7 @@ const FooterMenu = () => {
                     </div>
                     <div className='pt-3'>
                         <hr />
-                        <div className='py-5 d-flex justify-content-center'>
+                        <div className='py-5 d-flex justify-content-center copy'>
                             <p>© MealMover. All Rights Reserved 2023. Licensing</p>
                         </div>
                     </div>
