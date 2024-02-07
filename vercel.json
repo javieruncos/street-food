@@ -1,15 +1,16 @@
 {
-    "builds":[
+    "rewrites": [
       {
-        "src": "src/index.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes":[
+        "source": "/assets/(.*)",
+        "destination": "/assets/$1"
+      },
       {
-        "src": "/(.*)",
-        "dest": "src/index.js"
+        "source": "/scripts/(.*)",
+        "destination": "/scripts/$1"
+      },
+      {
+        "source": "/(.*)",
+        "destination": "/"
       }
     ]
   }
-  
