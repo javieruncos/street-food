@@ -4,7 +4,7 @@ import "../../assets/style/Login.css"
 import { useForm } from 'react-hook-form';
 import { loginUsuario, obtenerUsuarios } from '../../helpers/usuarios';
 import { useContext } from 'react';
-import { usuarioState } from '../../context/stateUsuarios';
+import { usuarioState } from '../../context/StateUsuarios';
 import Swal from 'sweetalert2';
 
 const Login = () => {

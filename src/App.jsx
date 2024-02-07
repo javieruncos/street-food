@@ -12,10 +12,12 @@ import StateCarrito from "./context/StateCarrito"
 import PageDetalle from "./components/pages/PageDetalle"
 import Registro from "./components/pages/Registro"
 import Login from "./components/pages/Login"
-import StateUsuarios from "./context/stateUsuarios"
 import RutasProtegidas from "./routes/RutasProtegidas"
 import RutasAdmin from "./routes/RutasAdmin"
 import FooterMenu from "./components/common/FooterMenu"
+import StateUsuarios from "./context/StateUsuarios"
+
+
 
 function App() {
   return (
