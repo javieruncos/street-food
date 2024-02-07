@@ -23,8 +23,8 @@ const PageMenu = () => {
                         alt=""
                     />
                     <div className='capaPortada-menu'>
-                        <div className='container'>
-                            <h2 className='display-1 fuenteTitle'>Nuestro Menu</h2>
+                        <div className='container' data-aos="fade-up">
+                            <h2 className='display-1 fw-bold fuenteTitle'>Nuestro Menu</h2>
                             <p>
                                 Bienvenido a nuestro apetitoso blog, donde te
                                 llevamos en un viaje a través del vibrante <br /> y
@@ -36,7 +36,7 @@ const PageMenu = () => {
             </article>
             <article>
                 <div className='mt-5 container'>
-                    <div className='menuBusqueda'>
+                    <div className='menuBusqueda' data-aos="fade-up">
                         <div>
                             <button className='btnBusqueda' onClick={() => { categoriaFiltrada("All") }}>Todos</button>
                             <button className='btnBusqueda'  onClick={() => { categoriaFiltrada("pizza") }} >Pizza</button>
@@ -46,7 +46,7 @@ const PageMenu = () => {
                     </div>
                 </div>
                 <div className='container mt-4'>
-                    <div className='row'>
+                    <div className='row' data-aos="fade-up">
                         {
                             productosFiltrados.map((producto)=>(
                                 <CardMenu producto={producto} key={producto.id}></CardMenu>

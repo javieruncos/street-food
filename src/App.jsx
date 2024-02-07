@@ -15,11 +15,20 @@ import Login from "./components/pages/Login"
 import RutasProtegidas from "./routes/RutasProtegidas"
 import RutasAdmin from "./routes/RutasAdmin"
 import FooterMenu from "./components/common/FooterMenu"
-import StateUsuarios from "./context/StateUsuarios"
-
-
+import StateUsuarios from "./context/StateUsuarios";
+import { useEffect } from "react";
+import Aos, { init } from "aos";
+import "aos/dist/aos.css"
 
 function App() {
+
+  useEffect(() => {
+    Aos, init({
+      duration: 1000
+    })
+  }, [])
+
+
   return (
     <>
       <StateUsuarios>

@@ -3,7 +3,7 @@ import React from 'react';
 const SliderGalery = () => {
     return (
         <>
-            <div className="SliderGaleria mt-3">
+            <div className="SliderGaleria mt-3" data-aos="fade-up">
                 <div className='containerItems'>
                     <img src="https://media.istockphoto.com/id/1307190527/es/foto/feliz-camarero-sirviendo-comida-a-un-grupo-de-amigos-en-un-pub.jpg?s=612x612&w=0&k=20&c=-BICd4vjkPYTHSW4zCdVd1vqbjG2Guz07i9Ctm9nzo4=" alt="platos del menu" className='imgSlide' />
                     <img src="https://media.istockphoto.com/id/1387140649/es/foto/por-nuestra-amistad.jpg?s=612x612&w=0&k=20&c=5eDywHfxG9cj95msddhCJqM7SH8k54_ky8ZVo_WikYg=" alt="platos del menu" className='imgSlide' />
