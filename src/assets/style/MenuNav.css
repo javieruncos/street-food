@@ -5,7 +5,10 @@
     z-index: 10;
 }
 
-
+.containerBtn-nav{
+    display: flex;
+    gap: 20px;
+}
 
 .btnCarrito {
     background-color: yellow;
@@ -53,4 +56,23 @@
 
 .logoFood{
     height: 40px;
+}
+
+
+@media screen and (max-width:767px){
+    .containerBtn-nav{
+        display: flex;
+        flex-direction: column;
+        width: 76px;
+    }
+    
+}
+
+@media screen and (max-width:991px){
+    .containerBtn-nav{
+        display: flex;
+        flex-direction: column;
+        width: 76px;
+    }
+    
 }

@@ -3,7 +3,7 @@ import "../../assets/style/Acordeon.css"
 import { Accordion } from 'react-bootstrap';
 const AcordeonPreguntas = () => {
     return (
-        <div className='container'>
+        <div className='container' data-aos="fade-up">
             <h2 className='text-center display-3 fuenteTitle'>Preguntas Frecuentes</h2>
             <div className='row my-5'>
                 <div className='col-12 col-md-6 col-lg-6'>

@@ -1,5 +1,5 @@
 .portada-testimonios{
-    height: 450px;
+    height: 550px;
     width: 100%;
     position: relative;
     margin-top: 50px;
@@ -60,6 +60,13 @@
 
 
 @media screen and (max-width:767px) {
+
+    .portada-testimonios{
+        height: 350px;
+        width: 100%;
+        position: relative;
+        margin-top: 50px;
+    }
 
     .galeria{
         display: none;
