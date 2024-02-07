@@ -16,7 +16,7 @@ const ModalCarrito = ({show,handleClose}) => {
                 <Modal.Body>
                        {
                         carrito.map((producto)=>(
-                            <ItemModal producto={producto}></ItemModal>
+                            <ItemModal producto={producto} key={producto._id}></ItemModal>
                         ))
                        }
                        <div className='d-flex justify-content-between'>

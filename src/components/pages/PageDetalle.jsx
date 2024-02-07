@@ -6,8 +6,9 @@ import { useEffect, useState } from 'react';
 import { obtenerProductoID } from '../../helpers/app';
 import { carritoContext } from '../../context/StateCarrito';
 import useCarrito from '../../hooks/useCarrito';
-import useProductos from '../../hooks/useProductos';
+
 import CardMenu from '../UiComponents/CardMenu';
+import useProductos from '../../hooks/useProductos';
 
 const PageDetalle = () => {
     const {listaProductos} = useProductos()
