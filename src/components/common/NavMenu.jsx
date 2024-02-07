@@ -48,7 +48,7 @@ const NavMenu = () => {
                 </> : <></>
               }
             </Nav>
-            <div className='py-2  d-flex gap-3'>
+            <div className='py-2   containerBtn-nav'>
               {
                 !usuario.nombre ? <>
                   <a href="/registro" className='linkRegistro'>Registrarse</a>

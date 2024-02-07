@@ -1,15 +1,15 @@
-.portadaIeam{
+.portadaEquipo{
     height: 600px;
     width: 100%;
     position: relative;
 }
 
-.portadaIeam h2{
+.portadaEquipo h2{
     color: yellow;
 }
 
 
-.portadaIeam img{
+.portadaEquipo img{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -110,6 +110,18 @@
 }
 
 @media screen and (max-width:767px) {
+
+    .portadaEquipo{
+        height: 400px;
+        width: 100%;
+        position: relative;
+    }
+    
+
+    .portadaEquipo h2{
+        padding-top: 60px;
+    }
+
     .capa-portada div{
         width: 330px;
     }

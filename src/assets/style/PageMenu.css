@@ -67,6 +67,12 @@
 
 
 @media screen and (max-width:767px) {
+
+    .PortadaMenu{
+        height: 350px;
+        width: 100%;
+    }
+
     .menuBusqueda{
         height: 150px;
         width: 100%;
