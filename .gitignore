@@ -13,6 +13,8 @@ dist-ssr
 *.local
 .env
 
+# json-server --watch productos.json --port 4015
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

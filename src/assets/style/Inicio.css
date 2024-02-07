@@ -1,0 +1,285 @@
+.Portada-Inicio{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 50px;
+}
+
+.Portada-Inicio h1{
+    color: yellow;
+}
+
+.Portada-Inicio img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.capaPortada{
+    height: 600px;
+    width: 100%;
+    background-color: rgba(8, 8, 8, 0.521);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.containerTitulo-Portada{
+    height: 400px;
+    width: 800px;
+    margin-top: 80px;
+    color: white;
+    font-weight: bold;
+}
+
+.containerBtn-Inicio{
+    height: 100px;
+    width: 800px;
+}
+
+.containerBtn-Inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px ;
+}
+
+.containerBtn-Inicio a{
+    width: 150px;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+
+.containerBtn-Inicio a:hover{
+    background-color: yellow;
+   color: black;
+}
+
+
+/* *************
+Sucursales******************************* */
+.sucursales{
+    height: 800px;
+    width: 100%;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.containerTitulo-sucursales{
+    width:600px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cardSucursales{
+    height: 440px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.fecha-card{
+    padding: 10px 30px;
+    background-color: burlywood;
+    border-radius: 10px;
+}
+
+.card-body div{
+    height: 80px;
+    width: 100%;
+}
+
+.item-body div{
+  width: 300px;
+}
+
+.horario-card{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+
+/* **********galeria************************* */
+
+.SliderGaleria{
+    width: 100%;
+    height: auto;
+    margin:auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+
+}
+
+.containerItems{
+    animation: scroll 60s linear infinite;
+    gap: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.imgSlide{
+  height: 500px;
+  width: 500px;
+  margin: 0px 20px;
+  padding-top: 50px;
+  object-fit: cover;
+}
+
+.SliderGaleria2{
+    width: 100%;
+    margin:auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.containerItems2{
+    animation: scrollSlider 60s linear infinite;
+    gap: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.imgSlide{
+  height: 450px;
+  width: 500px;
+  margin: 0px 20px;
+  transition: 0.5s ease-in-out;
+ 
+}
+
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+@keyframes scrollSlider {
+    from{
+        transform: translateX(-100%);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+.btnRowMenu{
+    padding: 10px 20px;
+    background-color: yellow;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s ease;
+}
+
+.btnRowMenu:hover{
+    scale: 1.05;
+    background-color: black;
+    border: 1px solid yellow;
+    color: yellow;
+    box-shadow: 8px 9px 12px -2px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 8px 9px 12px -2px rgba(0,0,0,0.25);
+    -moz-box-shadow: 8px 9px 12px -2px rgba(0,0,0,0.25);
+   
+}
+
+
+@media screen and (max-width:767px) {
+
+    .capaPortada{
+        background-color: rgba(8, 8, 8, 0.753);
+    }
+
+    .containerTitulo-Portada{
+        height: 400px;
+        width: 300px;
+    }
+
+    .containerBtn-Inicio{
+        height: 100px;
+        width: 300px;
+        
+    }
+
+    /* ********sucursales******* */
+
+    .sucursales{
+        height: 1200px;
+        width: 100%;
+        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .containerTitulo-sucursales{
+        width:320px;
+        height: 200px;
+    }
+
+    .fecha-card{
+        padding: 10px 5px;
+        background-color: burlywood;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+
+    .item-body div{
+        width: 200px;
+        font-size: 15px;
+      }
+
+      .horario-card{
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .Menu-Inicio .tituloMenu{
+        width: 320px;
+    }
+
+    /* ********slider*********** */
+
+    .galeria {
+        text-align: center;
+        display: none;
+    }
+
+    .imgSlide{
+        height: 350px;
+        width: 350px;
+        margin: 0px 20px;
+        transition: 0.5s ease-in-out;
+       
+      }
+}

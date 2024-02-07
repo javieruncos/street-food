@@ -1,0 +1,56 @@
+.NavMenu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+
+
+.btnCarrito {
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.btnCarrito span {
+    position: absolute;
+    right: -15px;
+    top: -10px;
+    height:30px;
+    width: 30px;
+    padding: 5px 10px;
+    background-color: rgb(247, 76, 76);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btnLogin{
+    background-color: yellow;
+    padding: 5px 20px;
+}
+
+.btnLogin:hover{
+    background-color: yellow;
+    scale: 1.02;
+}
+
+.linkRegistro{
+    text-decoration: none;
+    color: rgb(150, 150, 150);
+    padding-top: 5px;
+}
+
+.linkRegistro:hover{
+    color: rgba(255, 255, 255, 0.801);
+}
+
+.logoFood{
+    height: 40px;
+}

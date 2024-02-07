@@ -1,0 +1,11 @@
+.acordeon .itemAcordeon button{
+  box-shadow: none;
+  background-color: transparent;
+  color: black;
+  height: 80px;
+}
+
+.acordeon .itemAcordeon button:focus{
+    color: yellow;
+}
+

@@ -1,0 +1,13 @@
+@media screen and (max-width:991px){
+    .fecha-card {
+        padding: 10px 10px;
+        background-color: burlywood;
+        border-radius: 10px;
+        font-size: 13px;
+    }
+
+    .horario-card {
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
