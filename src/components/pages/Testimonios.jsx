@@ -1,7 +1,7 @@
 import React from 'react';
 import "../../assets/style/Testimonios.css"
 import { testimonioUser } from '../../helpers/info';
-import CardTestimonios from '../UiComponents/cardTestimonios';
+import CardTestimonios from '../UiComponents/CardTestimonios';
 import SliderGalery from '../UiComponents/SliderGalery';
 
 
