@@ -1,4 +1,4 @@
-import React, { useEffect ,useState} from 'react';
+import { useEffect ,useState} from 'react';
 import { listarProductos } from '../helpers/app';
 
 const useProductos = () => {
@@ -9,7 +9,6 @@ const useProductos = () => {
     useEffect(() => {
         listarProductos().then(respuesta => {
             setListaProductos(respuesta)
-            console.log(respuesta)
         })
     }, [])
 

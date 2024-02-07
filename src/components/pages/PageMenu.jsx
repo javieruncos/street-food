@@ -2,8 +2,8 @@ import React from 'react';
 import "../../assets/style/PageMenu.css";
 import CardMenu from "../../components/UiComponents/CardMenu";
 import PortadaUbicacion from "../UiComponents/PortadaUbicacion";
-import useProductos from '../../hooks/useProductos';
 import useFiltro from '../../hooks/useFiltro';
+import useProductos from '../../hooks/useProductos';
 
 const PageMenu = () => {
      const {listaProductos} = useProductos()

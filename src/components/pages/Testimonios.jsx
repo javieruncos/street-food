@@ -2,7 +2,7 @@ import React from 'react';
 import "../../assets/style/Testimonios.css"
 import { testimonioUser } from '../../helpers/info';
 import CardTestimonios from '../UiComponents/cardTestimonios';
-import SliderGalery from '../UiComponents/sliderGalery';
+import SliderGalery from '../UiComponents/SliderGalery';
 
 
 const Testimonios = () => {

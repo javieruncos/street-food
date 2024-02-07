@@ -2,12 +2,11 @@ import React from 'react';
 import "../../assets/style/Inicio.css";
 import CardSucursales from '../UiComponents/CardSucursales';
 import { infoSucursales, infoSucursales2 } from '../../helpers/info';
-import SliderGalery from '../UiComponents/sliderGalery';
+
 import CardMenu from '../UiComponents/CardMenu';
 import PortadaUbicacion from '../UiComponents/PortadaUbicacion';
 import useProductos from '../../hooks/useProductos';
-import { NavItem } from 'react-bootstrap';
-import useCarrito from '../../hooks/useCarrito';
+import SliderGalery from '../UiComponents/SliderGalery';
 
 const Inicio = () => {
 
@@ -83,7 +82,7 @@ const Inicio = () => {
                         <div className='row my-5'>
                             {
                                 listaProductos.slice(0, 9).map(producto => (
-                                    <CardMenu producto={producto} key={producto.id}></CardMenu>
+                                    <CardMenu producto={producto} key={producto._id}></CardMenu>
                                 ))
                             }
                         </div>
