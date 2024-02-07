@@ -1,12 +1,11 @@
 import React, { useContext } from 'react';
-import "../../assets/style/detalleProducto.css";
+import "../../assets/style/DetalleProducto.css";
 import { Breadcrumb } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { obtenerProductoID } from '../../helpers/app';
 import { carritoContext } from '../../context/StateCarrito';
 import useCarrito from '../../hooks/useCarrito';
-
 import CardMenu from '../UiComponents/CardMenu';
 import useProductos from '../../hooks/useProductos';
 
