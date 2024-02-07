@@ -5,7 +5,7 @@ import logoFood from "../../assets/img/logoFood.png";
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import ModalCarrito from './ModalCarrito';
 import { carritoContext } from '../../context/StateCarrito';
-import { usuarioState } from '../../context/stateUsuarios';
+import { usuarioState } from '../../context/StateUsuarios';
 import { useNavigate } from 'react-router-dom';
 
 const NavMenu = () => {
